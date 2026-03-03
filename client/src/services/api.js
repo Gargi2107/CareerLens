@@ -1,7 +1,7 @@
 import axios from "axios";
-
+console.log(window.location.origin);
 const API = axios.create({
-  baseURL: "http://localhost:3001/api"
+  baseURL: "/api",
 });
 
 export const fetchQuestions = () => API.get("/assessment/questions");
