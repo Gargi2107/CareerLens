@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import axios from "axios";
+import { fetchQuestions } from "../services/api";
 
 function Assessment() {
   const navigate = useNavigate();
@@ -12,8 +12,7 @@ function Assessment() {
   const [answers, setAnswers] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/assessment/questions")
+    fetchQuestions()
       .then((res) => setQuestions(res.data))
       .catch((err) => console.error(err));
   }, []);
