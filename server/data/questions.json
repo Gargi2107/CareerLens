@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Do you enjoy solving coding or logical problems?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you like designing visuals, layouts, or creative content?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you prefer working with numbers and data?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you enjoy leading a team or organizing tasks?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you like communicating and presenting ideas to people?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Are you interested in understanding how businesses grow and make profit?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you enjoy learning new technologies and tools?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you prefer structured tasks over open-ended creative work?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Are you comfortable making decisions under pressure?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  },
+  {
+    "question": "Do you enjoy analyzing problems before taking action?",
+    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+  }
+]
