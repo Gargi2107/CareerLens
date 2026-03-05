@@ -1,14 +1,29 @@
-const fs = require("fs");
-const path = require("path");
+const questions = require("../data/questions.json");
+const careers = require("../data/careers.json");
+const calculateScores = require("../services/scoringEngine");
+const matchCareers = require("../services/careerMatcher");
+const generateRoadmap = require("../services/roadmapGenerator");
 
 const getQuestions = (req, res) => {
-  try {
-    const filePath = path.join(__dirname, "../data/questions.json");
-    const questions = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    res.json(questions);
-  } catch (error) {
-    res.status(500).json({ message: "Error reading questions file" });
-  }
+  res.json(questions);
+};
+const submitAssessment = (req, res) => {
+  const { answers } = req.body;
+
+  const scores = calculateScores(answers, questions);
+  const matchedCareers = matchCareers(scores, careers);
+
+  const topCareers = matchedCareers.slice(0, 3).map((career) => ({
+    ...career,
+    roadmap: generateRoadmap(career.role),
+  }));
+  res.json({
+    scores,
+    careers: topCareers,
+  });
 };
 
-module.exports = { getQuestions };
+module.exports = {
+  getQuestions,
+  submitAssessment,
+};

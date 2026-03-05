@@ -1,42 +1,187 @@
 [
   {
-    "question": "Do you enjoy solving coding or logical problems?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 1,
+    "question": "I enjoy solving logical puzzles.",
+    "dimension": "aptitude",
+    "trait": "logical"
   },
   {
-    "question": "Do you like designing visuals, layouts, or creative content?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 2,
+    "question": "I like designing creative things.",
+    "dimension": "interest",
+    "trait": "creative"
   },
   {
-    "question": "Do you prefer working with numbers and data?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 3,
+    "question": "I prefer working with data and analysis.",
+    "dimension": "personality",
+    "trait": "analytical"
   },
   {
-    "question": "Do you enjoy leading a team or organizing tasks?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 4,
+    "question": "I value job stability.",
+    "dimension": "values",
+    "trait": "stability"
   },
   {
-    "question": "Do you like communicating and presenting ideas to people?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 5,
+    "question": "Mathematics is one of my strong subjects.",
+    "dimension": "academic",
+    "trait": "math"
+  },
+
+  {
+    "id": 6,
+    "question": "I enjoy coding or learning programming.",
+    "dimension": "interest",
+    "trait": "technology"
   },
   {
-    "question": "Are you interested in understanding how businesses grow and make profit?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 7,
+    "question": "I like analyzing numbers and statistics.",
+    "dimension": "aptitude",
+    "trait": "analytical"
   },
   {
-    "question": "Do you enjoy learning new technologies and tools?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 8,
+    "question": "I enjoy drawing, painting, or visual arts.",
+    "dimension": "interest",
+    "trait": "creative"
   },
   {
-    "question": "Do you prefer structured tasks over open-ended creative work?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 9,
+    "question": "I like helping people solve their problems.",
+    "dimension": "personality",
+    "trait": "social"
   },
   {
-    "question": "Are you comfortable making decisions under pressure?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 10,
+    "question": "I prefer jobs that involve leadership.",
+    "dimension": "values",
+    "trait": "leadership"
+  },
+
+  {
+    "id": 11,
+    "question": "Physics is one of my strong subjects.",
+    "dimension": "academic",
+    "trait": "physics"
   },
   {
-    "question": "Do you enjoy analyzing problems before taking action?",
-    "options": ["Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree"]
+    "id": 12,
+    "question": "I enjoy working with computers.",
+    "dimension": "interest",
+    "trait": "technology"
+  },
+  {
+    "id": 13,
+    "question": "I can understand complex problems quickly.",
+    "dimension": "aptitude",
+    "trait": "problem_solving"
+  },
+  {
+    "id": 14,
+    "question": "I like organizing events or leading teams.",
+    "dimension": "personality",
+    "trait": "leadership"
+  },
+  {
+    "id": 15,
+    "question": "I prefer careers that allow innovation.",
+    "dimension": "values",
+    "trait": "innovation"
+  },
+
+  {
+    "id": 16,
+    "question": "Biology is one of my strong subjects.",
+    "dimension": "academic",
+    "trait": "biology"
+  },
+  {
+    "id": 17,
+    "question": "I enjoy writing stories or articles.",
+    "dimension": "interest",
+    "trait": "communication"
+  },
+  {
+    "id": 18,
+    "question": "I like debating and presenting ideas.",
+    "dimension": "personality",
+    "trait": "communication"
+  },
+  {
+    "id": 19,
+    "question": "I prefer jobs where I can help society.",
+    "dimension": "values",
+    "trait": "social_impact"
+  },
+  {
+    "id": 20,
+    "question": "Chemistry is one of my strong subjects.",
+    "dimension": "academic",
+    "trait": "chemistry"
+  },
+
+  {
+    "id": 21,
+    "question": "I enjoy building or fixing things.",
+    "dimension": "interest",
+    "trait": "practical"
+  },
+  {
+    "id": 22,
+    "question": "I can visualize how machines work.",
+    "dimension": "aptitude",
+    "trait": "mechanical"
+  },
+  {
+    "id": 23,
+    "question": "I like working in teams.",
+    "dimension": "personality",
+    "trait": "teamwork"
+  },
+  {
+    "id": 24,
+    "question": "I prefer jobs with high salary potential.",
+    "dimension": "values",
+    "trait": "financial_growth"
+  },
+  {
+    "id": 25,
+    "question": "I am strong in computer science.",
+    "dimension": "academic",
+    "trait": "computer_science"
+  },
+
+  {
+    "id": 26,
+    "question": "I like researching new topics.",
+    "dimension": "interest",
+    "trait": "research"
+  },
+  {
+    "id": 27,
+    "question": "I enjoy solving difficult problems.",
+    "dimension": "aptitude",
+    "trait": "problem_solving"
+  },
+  {
+    "id": 28,
+    "question": "I enjoy guiding or mentoring others.",
+    "dimension": "personality",
+    "trait": "mentoring"
+  },
+  {
+    "id": 29,
+    "question": "I value work-life balance.",
+    "dimension": "values",
+    "trait": "balance"
+  },
+  {
+    "id": 30,
+    "question": "English or communication is one of my strong subjects.",
+    "dimension": "academic",
+    "trait": "communication"
   }
 ]

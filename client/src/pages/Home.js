@@ -18,7 +18,7 @@ function Home() {
         </p>
 
         <Link
-          to="/assessment"
+          to="/register"
           className="inline-block mt-8 bg-indigo-600 text-white px-6 py-3 rounded-full"
         >
           Start Free Assessment

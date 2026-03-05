@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Software Developer",
+    "traits": ["logical", "analytical", "math"],
+    "subjects": ["Mathematics", "Computer Science"],
+    "degreePath": ["B.Tech CSE", "BCA", "MCA"],
+    "skills": ["Programming", "Problem Solving", "Algorithms"],
+    "backupCareers": ["Data Analyst", "QA Engineer"]
+  },
+  {
+    "role": "UI/UX Designer",
+    "traits": ["creative"],
+    "subjects": ["Design", "Psychology"],
+    "degreePath": ["B.Des", "UI/UX Certification"],
+    "skills": ["Figma", "User Research", "Wireframing"],
+    "backupCareers": ["Graphic Designer", "Product Designer"]
+  },
+  {
+    "role": "Data Analyst",
+    "traits": ["analytical", "math"],
+    "subjects": ["Statistics", "Mathematics"],
+    "degreePath": ["BSc Statistics", "B.Tech Data Science"],
+    "skills": ["SQL", "Python", "Data Visualization"],
+    "backupCareers": ["Business Analyst", "Data Scientist"]
+  }
+]

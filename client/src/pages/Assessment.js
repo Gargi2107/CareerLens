@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { fetchQuestions } from "../services/api";
+import API from "../services/api";
 
 function Assessment() {
   const navigate = useNavigate();
@@ -12,12 +12,12 @@ function Assessment() {
   const [answers, setAnswers] = useState([]);
 
   useEffect(() => {
-    fetchQuestions()
+    API.get("/assessment/questions")
       .then((res) => setQuestions(res.data))
       .catch((err) => console.error(err));
   }, []);
 
-  const handleNext = () => {
+  const handleNext = async () => {
     const updatedAnswers = [...answers, selectedOption];
     setAnswers(updatedAnswers);
 
@@ -25,33 +25,11 @@ function Assessment() {
       setCurrentIndex(currentIndex + 1);
       setSelectedOption(null);
     } else {
-      const scores = {
-        Analytical: 0,
-        Creative: 0,
-        Practical: 0,
-      };
-
-      updatedAnswers.forEach((answer) => {
-        if (answer === "Strongly Agree") scores.Analytical += 2;
-        if (answer === "Agree") scores.Creative += 2;
-        if (answer === "Neutral") scores.Practical += 1;
+      const res = await API.post("/assessment/submit", {
+        answers: updatedAnswers,
       });
-
-      const careerSuggestions = [];
-
-      if (scores.Analytical >= 10)
-        careerSuggestions.push("Software Developer");
-      else if (scores.Creative >= 10)
-        careerSuggestions.push("UI/UX Designer");
-      else if (scores.Practical >= 5)
-        careerSuggestions.push("Project Manager");
-      else careerSuggestions.push("Generalist");
-
       navigate("/result", {
-        state: {
-          scores,
-          careerSuggestions,
-        },
+        state: res.data,
       });
     }
   };
@@ -67,7 +45,7 @@ function Assessment() {
       </>
     );
   }
-
+  // console.log("questions");
   const currentQuestion = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
@@ -77,7 +55,6 @@ function Assessment() {
 
       <div className="min-h-screen bg-indigo-50 flex items-center justify-center px-4">
         <div className="bg-white w-full max-w-2xl p-10 rounded-2xl shadow-xl">
-
           {/* Progress Bar */}
           <div className="mb-6">
             <div className="flex justify-between text-sm text-gray-600 mb-2">
